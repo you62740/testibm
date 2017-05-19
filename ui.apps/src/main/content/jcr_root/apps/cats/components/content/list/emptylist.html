@@ -1,0 +1,4 @@
+<template data-sly-template.emptylisttemplate="${@list, authUtils}">
+    <img data-sly-test="${wcmmode.edit && list.isEmpty && !authUtils.isTouch}" src="/libs/cq/ui/resources/0.gif" class="cq-list-placeholder" alt="" />
+    <div data-sly-test="${wcmmode.edit && list.isEmpty && authUtils.isTouch}" class="cq-placeholder" data-emptytext="List"></div>
+</template>

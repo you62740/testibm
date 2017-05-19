@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-09-03T22:35:27.018+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Cats Design"
+        sling:resourceType="wcm/core/components/designer">
+        <contentpage jcr:primaryType="nt:unstructured">
+            <header-ipar
+                jcr:lastModified="{Date}2016-09-03T01:42:29.650+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:Cats">
+                <section jcr:primaryType="nt:unstructured"/>
+            </header-ipar>
+            <footer-ipar
+                jcr:lastModified="{Date}2016-09-03T22:35:26.994+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:Cats">
+                <section jcr:primaryType="nt:unstructured"/>
+            </footer-ipar>
+			<par
+                jcr:lastModified="{Date}2017-01-31T17:36:28.994+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:Cats">
+                <section jcr:primaryType="nt:unstructured"/>
+            <par>
+        </contentpage>
+    </jcr:content>
+</jcr:root>

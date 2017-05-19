@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header Visuel"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <imageFond
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/apps/ca/npc/components/granite/imagepicker"
+                        fieldLabel="Image de fond*"
+                        name="./imageFond"
+                        required="true"
+                        rootPath="/content/dam/"/>
+                    <formatAffichage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                        name="./formatAffichage"
+                        required="{Boolean}true"
+                        text="Format d'affichage">
+                        <items jcr:primaryType="nt:unstructured">
+                            <habillage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/radio"
+                                checked="{Boolean}true"
+                                cq-msm-lockable="/radioFormatAffichage"
+                                name="./radioFormatAffichage"
+                                text="Habillage"
+                                value="habillage"/>
+                            <flyer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/radio"
+                                cq-msm-lockable="/radioFormatAffichage"
+                                name="./radioFormatAffichage"
+                                text="Flyer"
+                                value="flyer"/>
+                        </items>
+                    </formatAffichage>
+                    <bouton
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Bouton"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <texteBouton
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Texte"
+                                name="./texteBouton"
+                                value=""/>
+                            <urlBouton
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="URL"
+                                name="./urlBouton"
+                                rootPath="/content/ca/"
+                                value=""/>
+                            <typeBouton
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                                name="./typeBouton"
+                                text="Type de bouton">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <principal
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                        checked="{Boolean}true"
+                                        cq-msm-lockable="/radioTypeBouton"
+                                        name="./radioTypeBouton"
+                                        text="Principal"
+                                        value="principal"/>
+                                    <secondaire
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                        cq-msm-lockable="/radioTypeBouton"
+                                        name="./radioTypeBouton"
+                                        text="Secondaire"
+                                        value="secondaire"/>
+                                </items>
+                            </typeBouton>
+                        </items>
+                    </bouton>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
