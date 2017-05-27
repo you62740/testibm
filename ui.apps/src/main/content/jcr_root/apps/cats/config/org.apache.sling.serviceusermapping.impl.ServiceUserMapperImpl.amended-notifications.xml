@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    user.mapping="[fr.ca.cat.npc.CMS_NPC0_Structuration_Contenu_core:expirymonitoringhelper=dam-asseteventmonitor-service,fr.ca.cat.npc.CMS_NPC0_Structuration_Contenu_core:notificationhelper=notification-service]"/>
